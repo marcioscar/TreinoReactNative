@@ -7,7 +7,6 @@ import {
 	Montserrat_700Bold,
 } from "@expo-google-fonts/montserrat";
 import { Loading } from "@components/Loading";
-import { SignIn } from "@screens/SignIn";
 import { Routes } from "@routes/index";
 
 export default function App() {
@@ -22,7 +21,6 @@ export default function App() {
 				backgroundColor='transparent'
 				translucent
 			/>
-
 			{fontLoaded ? <Routes /> : <Loading />}
 		</NativeBaseProvider>
 	);
